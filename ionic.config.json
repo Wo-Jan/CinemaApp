@@ -1,0 +1,7 @@
+{
+  "name": "prototipocine",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

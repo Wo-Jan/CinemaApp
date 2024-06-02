@@ -1,6 +1,15 @@
-import { Component, Input } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonHeader, IonToolbar, IonTitle, IonButtons, IonBackButton } from '@ionic/angular/standalone';
+import { 
+  IonHeader, 
+  IonToolbar, 
+  IonTitle, 
+  IonButtons, 
+  IonBackButton, 
+  NavController 
+} from '@ionic/angular/standalone';
+import { addIcons } from 'ionicons';
+import { arrowBackOutline } from 'ionicons/icons';
 
 @Component({
   selector: 'app-header',
@@ -14,8 +23,17 @@ import { IonHeader, IonToolbar, IonTitle, IonButtons, IonBackButton } from '@ion
     IonTitle,
     IonButtons,
     IonBackButton
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HeaderComponent {
   @Input() title: string = '';
+
+  constructor(private navCtrl: NavController) {
+    addIcons ({ arrowBackOutline })
+  }
+
+    navigateBack() {
+    this.navCtrl.navigateForward("/home");
+  }
 }

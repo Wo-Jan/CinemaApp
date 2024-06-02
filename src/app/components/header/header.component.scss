@@ -1,19 +1,14 @@
-ion-header {
-  --background: #000;
-  --color: #fff;
-  
+
+:host {
   ion-toolbar {
-    --background: #000;
-    --color: #fff;
-  }
-
-  ion-title {
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-
-  ion-back-button {
-    color: #fff;
+    --background: #f8f9fa;
+    --color: #000;
+    ion-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-align: center;
+    } ion-back-button {
+      color: #fff;
+    }
   }
 }

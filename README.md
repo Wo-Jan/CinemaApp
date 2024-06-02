@@ -12,7 +12,7 @@
 
     ```bash
     git clone https://github.com/EdgarDaza/prototipocine.git
-    cd <DIRECTORY_NAME>
+    cd prototipocine
     ```
 
 2. **Install dependencies**:

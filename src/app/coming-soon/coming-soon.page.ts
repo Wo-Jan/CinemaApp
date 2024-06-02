@@ -9,9 +9,9 @@ import {
 } from '@ionic/angular/standalone';
 
 @Component({
-  selector: 'app-comingsoon',
-  templateUrl: './comingsoon.page.html',
-  styleUrls: ['./comingsoon.page.scss'],
+  selector: 'app-coming-soon',
+  templateUrl: './coming-soon.page.html',
+  styleUrls: ['./coming-soon.page.scss'],
   standalone: true,
   imports: [
     IonContent, 

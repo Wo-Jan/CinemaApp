@@ -1,3 +1,10 @@
 <ion-app>
   <ion-router-outlet></ion-router-outlet>
+  <app-header></app-header>
+  <app-footer></app-footer>
 </ion-app>
+
+
+@if(title) {
+  <h1>{{title}}</h1>
+}

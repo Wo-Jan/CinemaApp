@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+
 import { 
   IonTabs,
   IonTabBar, 
   IonTabButton,
-  IonIcon
+  IonIcon, 
+  IonRouterLink
 } from '@ionic/angular/standalone';
 
 import { addIcons } from 'ionicons';
@@ -15,25 +17,27 @@ import {
 } from 'ionicons/icons';
 
 @Component({
-  selector: 'app-tabs',
-  templateUrl: './tabs.page.html',
-  styleUrls: ['./tabs.page.scss'],
+  selector: 'app-footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.scss'],
   standalone: true,
   imports: [
     IonTabs, 
     IonTabBar,
     IonTabButton,
-    IonIcon
+    IonIcon,
+    IonRouterLink
   ]
 })
-export class TabsPage implements OnInit {
+export class FooterComponent  implements OnInit {
 
   constructor() { 
     addIcons({ homeOutline, calendarOutline, personOutline});
-    
+
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
+
+

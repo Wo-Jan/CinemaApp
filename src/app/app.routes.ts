@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { ProfilePage } from './profile/profile.page';
 
 export const routes: Routes = [
   {
@@ -15,23 +16,41 @@ export const routes: Routes = [
   },
   {
     path: 'my-tickets',
-    loadComponent: () => import('./my-tickets/my-tickets.page').then(m => m.MyTicketsPage)
+    loadComponent: () => import('./profile/my-tickets/my-tickets.page').then(m => m.MyTicketsPage)
   },
   {
     path: 'my-credit-cards',
-    loadComponent: () => import('./my-credit-cards/my-credit-cards.page').then(m => m.MyCreditCardsPage)
+    loadComponent: () => import('./profile/my-credit-cards/my-credit-cards.page').then(m => m.MyCreditCardsPage)
   },
   {
     path: 'about-us',
-    loadComponent: () => import('./about-us/about-us.page').then(m => m.AboutUsPage)
+    loadComponent: () => import('./profile/about-us/about-us.page').then(m => m.AboutUsPage)
   },
+  {
+    path: 'test',
+    loadComponent: () => import('./profile/test/test.page').then(m => m.TestPage)
+  },
+  // {
+  //   path: 'profile',
+  //   loadComponent: () => import('./profile/profile.page').then(m => m.ProfilePage),
+  //   children: [
+  //     {
+  //       path: '',
+  //       loadComponent: () => import('./profile/profile.page').then(m => m.ProfilePage)
+  //     },
+  //     {
+  //       path: 'test',
+  //       loadComponent: () => import('./profile/test/test.page').then(m => m.TestPage)
+  //     },
+  //   ]
+  // },
   {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full',
   },
-  {
-    path: '**',
-    redirectTo: '/home',
-  }
+  // {
+  //   path: '**',
+  //   redirectTo: '/home',
+  // },
 ];

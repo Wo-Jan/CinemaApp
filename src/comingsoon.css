@@ -91,3 +91,14 @@ h3{
         width: 80%;
     }
 }
+
+.imgstyle{
+    display: flex;
+    justify-content: center;
+
+}
+
+.imagen{
+    width: 200px;
+    margin: 0 50px;
+}

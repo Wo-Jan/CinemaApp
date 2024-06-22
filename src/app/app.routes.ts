@@ -49,6 +49,16 @@ export const routes: Routes = [
     redirectTo: '/home',
     pathMatch: 'full',
   },
+  {
+    path: 'start1',
+    loadComponent: () => import('./pages/start/start1/start1.page').then( m => m.Start1Page)
+  },
+  {
+    path: 'start2',
+    loadComponent: () => import('./pages/start/start2/start2/start2.page').then( m => m.Start2Page)
+  },
+
+
   // {
   //   path: '**',
   //   redirectTo: '/home',

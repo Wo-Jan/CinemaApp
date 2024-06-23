@@ -6,7 +6,8 @@ import { IonContent, IonHeader, IonTitle, IonToolbar,
   NavController,
   IonIcon,
   IonRow,
-  IonCol } from '@ionic/angular/standalone';
+  IonCol,
+  IonGrid } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-start1',
@@ -17,7 +18,8 @@ import { IonContent, IonHeader, IonTitle, IonToolbar,
   IonButton,
   IonIcon,
   IonRow,
-  IonCol]
+  IonCol,
+  IonGrid]
 })
 export class Start1Page  {
 

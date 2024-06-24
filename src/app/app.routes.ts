@@ -56,7 +56,31 @@ export const routes: Routes = [
   {
     path: 'start2',
     loadComponent: () => import('./pages/start/start2/start2/start2.page').then( m => m.Start2Page)
+  },  {
+    path: 'selection',
+    loadComponent: () => import('./pages/selection/selection.page').then( m => m.SelectionPage)
   },
+  {
+    path: 'seats',
+    loadComponent: () => import('./pages/seats/seats.page').then( m => m.SeatsPage)
+  },
+  {
+    path: 'checkout',
+    loadComponent: () => import('./pages/checkout/checkout.page').then( m => m.CheckoutPage)
+  },
+  {
+    path: 'invoice',
+    loadComponent: () => import('./pages/invoice/invoice.page').then( m => m.InvoicePage)
+  },
+  {
+    path: 'confirmation',
+    loadComponent: () => import('./pages/confirmation/confirmation.page').then( m => m.ConfirmationPage)
+  },
+  {
+    path: 'user-data',
+    loadComponent: () => import('./pages/user-data/user-data.page').then( m => m.UserDataPage)
+  },
+
 
 
   // {

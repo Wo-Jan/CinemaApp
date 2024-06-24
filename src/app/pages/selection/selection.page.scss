@@ -5,6 +5,11 @@
     text-align: center;
   }
 
+  ion-toolbar {
+    --background: #0B101A;
+    color: #F1F1F1;
+  }
+
   .profile-container {
     display: flex;
     flex-direction: column;
@@ -51,6 +56,8 @@
     }
   }
 }
-ion-item.profile {
 
+ion-item.profile {
+  margin-top: 50px;  // Ajusta según sea necesario
 }
+

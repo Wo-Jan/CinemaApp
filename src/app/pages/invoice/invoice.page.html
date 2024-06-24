@@ -1,0 +1,21 @@
+<ion-content>
+  <div class="invoice-container">
+    <p>"Thank you for purchasing your movie ticket with us. We hope you enjoy your movie experience."</p>
+    <div class="ticket-details">
+      <h2>Avengers</h2>
+      <p><strong>Cinema:</strong> Federal Mall</p>
+      <p><strong>Order:</strong> QW1E0RTY</p>
+      <p><strong>Tickets:</strong> 3</p>
+      <p><strong>Seating:</strong> B1 - C1 - C2</p>
+      <img src="assets/barcode.png" alt="Barcode">
+    </div>
+  </div>
+
+  <ion-button 
+  expand="block" 
+  color="secondary" 
+  (click)="goToHome()">
+    Finish
+    <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+  </ion-button>
+</ion-content>

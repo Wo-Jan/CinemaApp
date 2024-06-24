@@ -10,6 +10,7 @@ import {
 } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { arrowBackOutline } from 'ionicons/icons';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-test',
@@ -27,12 +28,14 @@ import { arrowBackOutline } from 'ionicons/icons';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class TestPage {
-  title='';
-  constructor(private navCtrl: NavController) { 
-    addIcons({ arrowBackOutline });
+  title='Test page';
+  constructor(private router: Router) { 
+  }
+  navigateBack() {
+    this.router.navigate(['/profile']);
+  }
+  goSelection() {
+    this.router.navigate(['/selection']);
   }
 
-  navigateBack() {
-    this.navCtrl.navigateBack('profile'); 
-  }
 }

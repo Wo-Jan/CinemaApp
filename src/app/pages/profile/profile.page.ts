@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { 
   IonContent, 
-  //IonHeader, 
+  IonHeader, 
   IonTitle, 
   IonToolbar, 
   IonButton,
@@ -23,7 +23,7 @@ import { addIcons } from 'ionicons';
     CommonModule,
     FormsModule,
     IonContent, 
-    //IonHeader, 
+    IonHeader, 
     IonTitle, 
     IonToolbar, 
     IonButton,
@@ -32,6 +32,7 @@ import { addIcons } from 'ionicons';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ProfilePage {
+  title: string = 'Profile';
   constructor(private navCtrl: NavController) { 
   // constructor(private navController: NavController) { 
     addIcons({ ticketOutline, cardOutline});

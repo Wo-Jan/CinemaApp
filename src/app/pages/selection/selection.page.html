@@ -1,0 +1,116 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button
+      (click)="navigateBack()"> 
+        <ion-icon 
+        name="arrow-back-outline"
+        ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="selection-container">
+    <h2>Select Day</h2>
+    <ion-segment [(ngModel)]="selectedDay">
+      <ion-segment-button 
+      *ngFor="let day of ['May 1', 'May 2', 'May 3', 'May 4', 'May 5']" 
+      (click)="selectDay(day)" 
+      [value]="day">
+        {{ day }}
+      </ion-segment-button>
+    </ion-segment>
+
+    <h2>Select Time</h2>
+    <div class="time-selection">
+      <ion-button 
+      *ngFor="let time of ['2:00 pm', '5:30 pm', '9:00 pm']" 
+      expand="block" 
+      [color]="time === '5:30 pm' ? 'secondary' : 'light'">
+        {{ time }}
+      </ion-button>
+    </div>
+
+
+    <h2>Select Quality</h2>
+    <div class="quality-selection">
+      <ion-button 
+      expand="block" 
+      color="secondary">
+        2D
+      </ion-button>
+    </div>
+
+    <div class="tags">
+      <!-- image -->
+      <ion-button fill="outline" size="small">PG13</ion-button> 
+      <ion-button fill="outline" size="small">Science fiction</ion-button>
+    </div>
+
+    <ion-button 
+    expand="block" 
+    color="secondary" 
+    (click)="goToSeats()">
+      Booking
+      <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>
+
+
+
+<!-- 
+<ion-content>
+  <div class="selection-container">
+    <h2>Select Day</h2>
+    <ion-datetime
+      id="selectedDay"
+      display-format="DDDD MMM DD"
+      picker-format="MMMM DD"
+      min="2023-05-01"  
+      max="2023-05-05"  
+      [(ngModel)]="selectedDay"
+    ></ion-datetime>
+
+    <h2>Select Time</h2>
+    <div class="time-selection">
+      <ion-button 
+        *ngFor="let time of ['2:00 pm', '5:30 pm', '9:00 pm']" 
+        expand="block" 
+        [color]="selectedTime === time ? 'secondary' : 'light'"
+        (click)="selectTime(time)">
+        {{ time }}
+      </ion-button>
+    </div>
+
+    <h2>Select Quality</h2>
+    <div class="quality-selection">
+      <ion-button expand="block" color="secondary">
+        2D
+      </ion-button>
+    </div>
+
+    <div class="tags">
+      <ion-button 
+      fill="outline" 
+      size="small"
+      >PG13</ion-button>
+      <ion-button 
+      fill="outline" 
+      size="small"
+      >Science fiction</ion-button>
+    </div>
+
+    <ion-button 
+    expand="block" 
+    color="secondary" 
+    (click)="goToSeats()"
+    >Booking
+      <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content> -->

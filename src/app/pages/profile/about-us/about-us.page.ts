@@ -10,6 +10,7 @@ import {
 } from '@ionic/angular/standalone';
 import { arrowBackOutline } from 'ionicons/icons';
 import { addIcons } from 'ionicons';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about-us',
@@ -27,13 +28,13 @@ import { addIcons } from 'ionicons';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AboutUsPage {
-  title='';
-  constructor(private navCtrl: NavController) { 
+  title='About us';
+  constructor(private router: Router) { 
     addIcons({ arrowBackOutline });
   }
 
   navigateBack() {
-    this.navCtrl.navigateBack('profile'); 
+    this.router.navigate(['/profile']);
   }
 
 }

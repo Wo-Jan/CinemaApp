@@ -1,7 +1,12 @@
 :host {
+  ion-toolbar {
+    --background: #0B101A;
+    color: #F1F1F1;
+  }
+  
   ion-content {
-    
-    color: #000;
+    --background: #0B101A;
+    color: #0B101A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,8 +25,6 @@
         display: flex;
     justify-content: center;
       }
-
-      
     }
   }
 }

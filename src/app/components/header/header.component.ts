@@ -1,5 +1,12 @@
-import { CUSTOM_ELEMENTS_SCHEMA, Component, Input } from '@angular/core';
-import { CommonModule, Location } from '@angular/common';
+import { 
+  CUSTOM_ELEMENTS_SCHEMA, 
+  Component, 
+  Input 
+} from '@angular/core';
+import { 
+  CommonModule, 
+  Location 
+} from '@angular/common';
 import { 
   IonHeader, 
   IonToolbar, 
@@ -27,13 +34,13 @@ import { arrowBackOutline } from 'ionicons/icons';
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HeaderComponent {
-  @Input() title: string = '';
+  @Input() title: string = ' ';
 
   constructor(private location: Location) {
     addIcons ({ arrowBackOutline })
   }
 
-    navigateBack() {
+  navigateBack() {
       this.location.back();
   }
 }

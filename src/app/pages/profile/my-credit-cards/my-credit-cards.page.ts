@@ -8,7 +8,8 @@ import {
   IonToolbar, 
   NavController,
   IonIcon,
-  IonButton
+  IonButton,
+  IonButtons
 } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { arrowBackOutline } from 'ionicons/icons';
@@ -26,11 +27,12 @@ import { arrowBackOutline } from 'ionicons/icons';
     CommonModule, 
     FormsModule,
     IonIcon,
-    IonButton
+    IonButton,
+    IonButtons
   ]
 })
 export class MyCreditCardsPage {
-  title='';
+  title='Credit cards';
   constructor(private navCtrl: NavController) { 
     addIcons({ arrowBackOutline });
   }

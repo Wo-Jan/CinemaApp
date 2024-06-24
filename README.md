@@ -12,7 +12,7 @@
 
     ```bash
     git clone https://github.com/EdgarDaza/prototipocine.git
-    cd prototipocine
+    cd CinemaApp
     ```
 
 2. **Install dependencies**:

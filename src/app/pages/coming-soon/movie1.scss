@@ -1,0 +1,93 @@
+body {
+    font-family: 'Roboto';
+    background-color: #0b101a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 375px;
+    background-color: #121212;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+    position: relative;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    .trailer-btn {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        
+        background:none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+
+        img{
+            width: auto;
+            height: 30px;
+        }
+    }
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+
+    h1 { 
+        font-style: roboto;
+        color: #40526f;
+        margin: 0;
+        font-size: 24px;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 20px;
+        color: #40526f;
+    }
+
+    .tags {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 10px 0;
+
+        .tag {
+            background-color: #333;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+    }
+
+    .description {
+        margin: 20px 0;
+        font-size: 14px;
+        color: #f1f1f1;
+    }
+
+    .booking-btn {
+        display: block;
+        width: 100%;
+        background: none;
+        border: none;
+
+        cursor: pointer;
+       
+    }
+
+}

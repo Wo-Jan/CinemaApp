@@ -4,17 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 
 @Component({
-  selector: 'app-deadpool-wolverine',
-  templateUrl: './deadpool-wolverine.page.html',
-  styleUrls: ['./deadpool-wolverine.page.scss'],
+  selector: 'app-coming-soon-4',
+  templateUrl: './coming-soon-4.page.html',
+  styleUrls: ['./coming-soon-4.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
-export class DeadpoolWolverinePage implements OnInit {
+export class NorbertaPage  {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  
 
 }

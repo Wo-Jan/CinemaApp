@@ -82,12 +82,12 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/user-data/user-data.page').then( m => m.UserDataPage)
   },
   {
-    path: 'norberta',
-    loadComponent: () => import('./pages/coming-soon/coming-soon-4/norberta/norberta.page').then( m => m.NorbertaPage)
+    path: 'coming-soon-4',
+    loadComponent: () => import('./pages/coming-soon/coming-soon-4/coming-soon-4/coming-soon-4.page').then( m => m.NorbertaPage)
   },
   {
-    path: 'deadpool-wolverine',
-    loadComponent: () => import('./pages/coming-soon/coming-soon-2/deadpool-wolverine/deadpool-wolverine.page').then( m => m.DeadpoolWolverinePage)
+    path: 'coming-soon-2',
+    loadComponent: () => import('./pages/coming-soon/coming-soon-2/coming-soon-2/coming-soon-2.page').then( m => m.DeadpoolWolverinePage)
   },
   {
     path: 'quien-teme-al-pueblo-de-hitler',

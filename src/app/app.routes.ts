@@ -97,6 +97,11 @@ export const routes: Routes = [
     path: 'in-a-vionlent-nature',
     loadComponent: () => import('./pages/coming-soon/coming-soon-nature/in-a-violent-nature/in-a-vionlent-nature.page').then( m => m.InAVionlentNaturePage)
   },
+  {
+    path: 'in-a-violent-nature',
+    loadComponent: () => import('./pages/coming-soon/coming-soon-nature/in-a-violent-nature/in-a-violent-nature.page').then( m => m.InAViolentNaturePage)
+  },
+
 
 
 

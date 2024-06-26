@@ -56,7 +56,8 @@ export const routes: Routes = [
   {
     path: 'start2',
     loadComponent: () => import('./pages/start/start2/start2/start2.page').then( m => m.Start2Page)
-  },  {
+  },
+  {
     path: 'selection',
     loadComponent: () => import('./pages/selection/selection.page').then( m => m.SelectionPage)
   },
@@ -80,6 +81,25 @@ export const routes: Routes = [
     path: 'user-data',
     loadComponent: () => import('./pages/user-data/user-data.page').then( m => m.UserDataPage)
   },
+  {
+    path: 'norberta',
+    loadComponent: () => import('./pages/coming-soon/coming-soon-norberta/norberta/norberta.page').then( m => m.NorbertaPage)
+  },
+  {
+    path: 'deadpool-wolverine',
+    loadComponent: () => import('./pages/coming-soon/coming-soon-deadpool/deadpool-wolverine/deadpool-wolverine.page').then( m => m.DeadpoolWolverinePage)
+  },
+  {
+    path: 'quien-teme-al-pueblo-de-hitler',
+    loadComponent: () => import('./pages/coming-soon/coming-soon-quien-teme/quien-teme-al-pueblo-de-hitler/quien-teme-al-pueblo-de-hitler.page').then( m => m.QuienTemeAlPuebloDeHitlerPage)
+  },
+  {
+    path: 'in-a-vionlent-nature',
+    loadComponent: () => import('./pages/coming-soon/coming-soon-nature/in-a-violent-nature/in-a-vionlent-nature.page').then( m => m.InAVionlentNaturePage)
+  },
+
+
+
 
 
 

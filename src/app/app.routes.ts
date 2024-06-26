@@ -83,23 +83,19 @@ export const routes: Routes = [
   },
   {
     path: 'norberta',
-    loadComponent: () => import('./pages/coming-soon/coming-soon-norberta/norberta/norberta.page').then( m => m.NorbertaPage)
+    loadComponent: () => import('./pages/coming-soon/coming-soon-4/norberta/norberta.page').then( m => m.NorbertaPage)
   },
   {
     path: 'deadpool-wolverine',
-    loadComponent: () => import('./pages/coming-soon/coming-soon-deadpool/deadpool-wolverine/deadpool-wolverine.page').then( m => m.DeadpoolWolverinePage)
+    loadComponent: () => import('./pages/coming-soon/coming-soon-2/deadpool-wolverine/deadpool-wolverine.page').then( m => m.DeadpoolWolverinePage)
   },
   {
     path: 'quien-teme-al-pueblo-de-hitler',
-    loadComponent: () => import('./pages/coming-soon/coming-soon-quien-teme/quien-teme-al-pueblo-de-hitler/quien-teme-al-pueblo-de-hitler.page').then( m => m.QuienTemeAlPuebloDeHitlerPage)
-  },
-  {
-    path: 'in-a-vionlent-nature',
-    loadComponent: () => import('./pages/coming-soon/coming-soon-nature/in-a-violent-nature/in-a-vionlent-nature.page').then( m => m.InAVionlentNaturePage)
+    loadComponent: () => import('./pages/coming-soon/coming-soon-5/quien-teme-al-pueblo-de-hitler/quien-teme-al-pueblo-de-hitler.page').then( m => m.QuienTemeAlPuebloDeHitlerPage)
   },
   {
     path: 'in-a-violent-nature',
-    loadComponent: () => import('./pages/coming-soon/coming-soon-nature/in-a-violent-nature/in-a-violent-nature.page').then( m => m.InAViolentNaturePage)
+    loadComponent: () => import('./pages/coming-soon/coming-soon-3/in-a-violent-nature/in-a-violent-nature.page').then( m => m.InAViolentNaturePage)
   },
 
 

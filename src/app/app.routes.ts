@@ -96,7 +96,15 @@ export const routes: Routes = [
   {
     path: 'coming-soon-3',
     loadComponent: () => import('./pages/coming-soon/coming-soon-3/coming-soon-3/coming-soon-3.page').then( m => m.ComingSoon3Page)
+  },  {
+    path: 'start3',
+    loadComponent: () => import('./pages/start/start3/start3/start3.page').then( m => m.Start3Page)
   },
+  {
+    path: 'start4',
+    loadComponent: () => import('./pages/start/start4/start4/start4.page').then( m => m.Start4Page)
+  },
+
   
 
 

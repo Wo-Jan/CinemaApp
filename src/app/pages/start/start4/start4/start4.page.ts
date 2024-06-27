@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, 
-  IonToolbar,
+import { IonContent, IonHeader, IonTitle, IonToolbar,
   IonGrid,
   IonRow,
   NavController,
@@ -10,26 +9,24 @@ import { IonContent, IonHeader, IonTitle,
  } from '@ionic/angular/standalone';
 
 @Component({
-  selector: 'app-start2',
-  templateUrl: './start2.page.html',
-  styleUrls: ['./start2.page.scss'],
+  selector: 'app-start4',
+  templateUrl: './start4.page.html',
+  styleUrls: ['./start4.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, 
-    FormsModule,
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
     IonGrid,
-    IonRow,
-    IonButton]
+  IonRow,
+  IonButton
+  ]
 })
-export class Start2Page  {
+export class Start4Page  {
 
   constructor(private navCtrl: NavController) { }
-  goStart3() {
-    this.navCtrl.navigateForward("/start3");
-  }
-
+  
   goToHome() {
     this.navCtrl.navigateForward("/home")
   }
+
   
 
 }

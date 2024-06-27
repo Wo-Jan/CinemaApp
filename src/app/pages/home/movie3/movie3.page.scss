@@ -1,28 +1,26 @@
-body {
-    font-family: 'Roboto';
-    background-color: #0b101a;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
+:host{
+    ion-content {
+        --background: #0B101A;
+        color: #0B101A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
 .container {
-    width: 375px;
-    background-color: #121212;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
 }
 
 .image-container {
     position: relative;
 
     img {
-        width: 100%;
+        max-width: 100%;
+        height: 350px;
         display: block;
     }
 
@@ -81,8 +79,13 @@ body {
     }
 
     .booking-btn {
+        img{
+            position: center;
+            width: 150px;
+        }
         display: block;
         width: 100%;
+        
         background: none;
         border: none;
 
@@ -90,4 +93,6 @@ body {
        
     }
 
+}
+}
 }

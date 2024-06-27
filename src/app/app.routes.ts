@@ -96,13 +96,30 @@ export const routes: Routes = [
   {
     path: 'coming-soon-3',
     loadComponent: () => import('./pages/coming-soon/coming-soon-3/coming-soon-3/coming-soon-3.page').then( m => m.ComingSoon3Page)
-  },  {
+  },
+  {
     path: 'start3',
     loadComponent: () => import('./pages/start/start3/start3/start3.page').then( m => m.Start3Page)
   },
   {
     path: 'start4',
     loadComponent: () => import('./pages/start/start4/start4/start4.page').then( m => m.Start4Page)
+  },
+  {
+    path: 'coming-soon-1',
+    loadComponent: () => import('./pages/coming-soon/coming-soon-1/coming-soon-1.page').then( m => m.ComingSoon1Page)
+  },
+  {
+    path: 'movie1',
+    loadComponent: () => import('./pages/home/movie1/movie1.page').then( m => m.Movie1Page)
+  },
+  {
+    path: 'movie2',
+    loadComponent: () => import('./pages/home/movie2/movie2.page').then( m => m.Movie2Page)
+  },
+  {
+    path: 'movie3',
+    loadComponent: () => import('./pages/home/movie3/movie3.page').then( m => m.Movie3Page)
   },
 
   

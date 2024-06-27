@@ -1,20 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 
 @Component({
-  selector: 'app-quien-teme-al-pueblo-de-hitler',
-  templateUrl: './quien-teme-al-pueblo-de-hitler.page.html',
-  styleUrls: ['./quien-teme-al-pueblo-de-hitler.page.scss'],
+  selector: 'app-coming-soon-3',
+  templateUrl: './coming-soon-3.page.html',
+  styleUrls: ['./coming-soon-3.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
-export class QuienTemeAlPuebloDeHitlerPage implements OnInit {
+export class ComingSoon3Page {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  
 
 }

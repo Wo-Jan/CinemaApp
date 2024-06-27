@@ -83,20 +83,22 @@ export const routes: Routes = [
   },
   {
     path: 'coming-soon-4',
-    loadComponent: () => import('./pages/coming-soon/coming-soon-4/coming-soon-4/coming-soon-4.page').then( m => m.NorbertaPage)
+    loadComponent: () => import('./pages/coming-soon/coming-soon-4/coming-soon-4/coming-soon-4.page').then( m => m.ComingSoon4Page)
   },
   {
     path: 'coming-soon-2',
-    loadComponent: () => import('./pages/coming-soon/coming-soon-2/coming-soon-2/coming-soon-2.page').then( m => m.DeadpoolWolverinePage)
+    loadComponent: () => import('./pages/coming-soon/coming-soon-2/coming-soon-2/coming-soon-2.page').then( m => m.ComingSoon2Page)
   },
   {
-    path: 'quien-teme-al-pueblo-de-hitler',
-    loadComponent: () => import('./pages/coming-soon/coming-soon-5/quien-teme-al-pueblo-de-hitler/quien-teme-al-pueblo-de-hitler.page').then( m => m.QuienTemeAlPuebloDeHitlerPage)
+    path: 'coming-soon-5',
+    loadComponent: () => import('./pages/coming-soon/coming-soon-5/coming-soon-5/coming-soon-5.page').then( m => m.ComingSoon5Page)
   },
   {
-    path: 'in-a-violent-nature',
-    loadComponent: () => import('./pages/coming-soon/coming-soon-3/in-a-violent-nature/in-a-violent-nature.page').then( m => m.InAViolentNaturePage)
+    path: 'coming-soon-3',
+    loadComponent: () => import('./pages/coming-soon/coming-soon-3/coming-soon-3/coming-soon-3.page').then( m => m.ComingSoon3Page)
   },
+  
+
 
 
 

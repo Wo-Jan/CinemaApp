@@ -120,7 +120,11 @@ export const routes: Routes = [
   {
     path: 'movie3',
     loadComponent: () => import('./pages/home/movie3/movie3.page').then( m => m.Movie3Page)
+  },  {
+    path: 'coming-soon-6',
+    loadComponent: () => import('./pages/coming-soon/coming-soon-6/coming-soon-6.page').then( m => m.ComingSoon6Page)
   },
+
 
   
 

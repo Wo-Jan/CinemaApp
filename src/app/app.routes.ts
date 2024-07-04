@@ -6,10 +6,7 @@ export const routes: Routes = [
     path: 'home',
     loadComponent: () => import('./pages/home/home.page').then((m) => m.HomePage),
   },
-  {
-    path: 'comingsoon',
-    loadComponent: () => import('./pages/coming-soon/coming-soon.page').then(m => m.ComingsoonPage)
-  },
+
   {
     path: 'profile',
     loadComponent: () => import('./pages/profile/profile.page').then(m => m.ProfilePage)
@@ -120,9 +117,14 @@ export const routes: Routes = [
   {
     path: 'movie3',
     loadComponent: () => import('./pages/home/movie3/movie3.page').then( m => m.Movie3Page)
-  },  {
+  },
+  {
     path: 'coming-soon-6',
     loadComponent: () => import('./pages/coming-soon/coming-soon-6/coming-soon-6.page').then( m => m.ComingSoon6Page)
+  },
+  {
+    path: 'coming-soon',
+    loadComponent: () => import('./pages/coming-soon/pcoming-soon/coming-soon.page').then( m => m.ComingSoonPage)
   },
 
 

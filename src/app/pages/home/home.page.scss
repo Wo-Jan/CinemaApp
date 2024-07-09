@@ -2,176 +2,96 @@
     display: flex;
     height: 100%;
     background-color: #0B101A;
-    
   }
   
   ion-content {
     --background: #0B101A;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     color: white;
-    display: flex;
-
   }
   
-  .container {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    width: 100%;
-    max-width: 1200px;
-    box-sizing: border-box;
 }
 
 .header {
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
-
+    margin-bottom: 20px;
+    
     select {
-        background-color: #1a1c20;
-        color: white;
+        background-color: #333;
+        color: #fff;
         border: none;
         padding: 10px;
-        font-size: 16px;
         border-radius: 5px;
     }
 }
 
-.services-button {
-    background-color: #3a3f47;
-    color: #6e7176;
-    border: none;
-    padding: 10px 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    cursor: not-allowed;
+.services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+    button {
+        background-color: #444;
+        color: #777;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: not-allowed;
+    }
 }
 
 .movies-menu {
     display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    width: 100%;
-    padding: 10px 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    gap: 10px;
-    white-space: nowrap; /* Evita que los elementos se rompan en múltiples líneas */
-    justify-content: center;
-    scrollbar-width: thin;
-    scrollbar-color: #3a3f47 #0b0e13;
-    scroll-snap-type: x mandatory;
-}
+    overflow-x: scroll;
+    padding: 20px 0;
 
-.movies-menu::-webkit-scrollbar {
-    height: 8px;
-}
-
-.movies-menu::-webkit-scrollbar-thumb {
-    background-color: #3a3f47;
-    border-radius: 5px;
-}
-
-.movies-menu::-webkit-scrollbar-track {
-    background-color: #0b0e13;
-}
-
-.movie {
-    flex: 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    scroll-snap-align: start;
-
-    img {
-        width: 200px;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .title {
-        margin-top: 10px;
+    .movie-item {
+        position: relative;
+        margin-right: 20px;
         text-align: center;
-    }
-
-    .tag {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-size: 12px;
-
-        &.premieres {
-            background-color: #ff6600;
+        
+        img {
+            width: 150px;
+            border-radius: 10px;
         }
 
-        &.today {
-            background-color: #ffcc00;
+        .label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
         }
 
-        &.coming-soon {
-            background-color: #00ccff;
+        .premiere {
+            background-color: purple;
         }
-    }
-}
 
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
+        .today {
+            background-color: orange;
+        }
 
-    .header select {
-        font-size: 14px;
-        padding: 8px;
-    }
+        .coming-soon {
+            background-color: teal;
+        }
 
-    .services-button {
-        padding: 8px 16px;
-        margin: 15px 0;
-        font-size: 14px;
-    }
-
-    .movies-menu {
-        padding: 5px 0;
-        max-width: 100%;
-        gap: 5px;
-        padding-left: 10px;
-    }
-
-    .movie img {
-        width: 100px;
-        padding-left: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header select {
-        font-size: 12px;
-        padding: 6px;
-    }
-
-    .services-button {
-        padding: 6px 12px;
-        margin: 10px 0;
-        font-size: 12px;
-    }
-
-    .movies-menu {
-      padding-left: 10px;
-      
-        gap: 5px;
-
-    }
-
-    .movie img {
-        width: 100px;
-        padding-left: 10px;
+        .movie-title {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
     }
 }

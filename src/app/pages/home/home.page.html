@@ -1,32 +1,31 @@
 
 <ion-content>
-  <div class="container">
-    <header class="header">
-        <select>
-            <option>Choose Cinema</option>
-            <option>Federal Mall</option>
-            <option>Albrook Mall</option>
-            <option>Servicio 3</option>
-        </select>
-    </header>
-    <button class="services-button">Servicios</button>
-    <div class="movies-menu">
-        <div class="movie">
-            <img src="assets/movies/movie1.jpg" alt="Despicable Me 4 1">
-            <div class="title">Despicable Me 4</div>
-            <div class="tag premieres">Estreno</div>
+    <div class="container">
+        <div class="header">
+            <select id="cinema-selector">
+                <option value="Federal Mall">Federal Mall</option>
+            </select>
         </div>
-        <div class="movie">
-            <img src="assets/movies/movie2.jpg" alt="El Bus de la vida">
-            <div class="title">El Bus de la vida</div>
-            <div class="tag today">Hoy</div>
+        <div class="services">
+            <button disabled>Services</button>
         </div>
-        <div class="movie">
-            <img src="assets/movies/movie3.jpg" alt="Fly to the Moon">
-            <div class="title">Fly to the Moon</div>
-            <div class="tag coming-soon">Próximamente</div>
+        <div class="movies-menu">
+            <div class="movie-item">
+                <img src="assets/movies/movie1.jpg" alt="Despicable Me 4">
+                <div class="label premiere">Premieres</div>
+                <div class="movie-title">Despicable Me 4</div>
+            </div>
+            <div class="movie-item">
+                <img src="assets/movies/movie2.jpg" alt="El Bus de la Vida">
+                <div class="label today">Today</div>
+                <div class="movie-title">El Bus de la Vida</div>
+            </div>
+            <div class="movie-item">
+                <img src="assets/movies/movie3.jpg" alt="Fly to the Moon">
+                <div class="label coming-soon">Today</div>
+                <div class="movie-title">Fly to the Moon</div>
+            </div>
         </div>
     </div>
-</div>
 </ion-content>
 

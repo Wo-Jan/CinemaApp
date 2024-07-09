@@ -21,18 +21,36 @@
 }
 
 .header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    
+    margin-bottom: 10px;
+
     select {
         background-color: #333;
         color: #fff;
         border: none;
         padding: 10px;
         border-radius: 5px;
+        appearance: none; 
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        position: relative;
     }
+
+    select::before {
+        content: "Choose cinema";
+        color: #fff;
+        position: absolute;
+        left: 15px;
+    }
+
+   
+    select::after {
+        content: "\25BC";
+        color: #fff;
+        position: absolute;
+        right: 15px;
+        pointer-events: none; 
+    }
+
 }
 
 .services {
@@ -53,8 +71,9 @@
 
 .movies-menu {
     display: flex;
-    overflow-x: scroll;
-    padding: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 
     .movie-item {
         position: relative;
@@ -89,6 +108,7 @@
         }
 
         .movie-title {
+            color: white;
             margin-top: 10px;
             font-size: 14px;
             font-weight: bold;
